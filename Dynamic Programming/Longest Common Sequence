@@ -1,0 +1,62 @@
+import java.io.*;
+import java.lang.*;
+
+import java.util.HashMap;
+
+
+class GFG {
+    public static String lcs(String a,String  b,int lenA,int lenB,HashMap map) {
+
+        String longest="";
+        if(lenA<0 || lenB<0){
+            map.put(lenA+","+lenB,longest);
+
+            return longest;
+
+        }
+
+        if(map.get(lenA+","+lenB)!=null)
+            return (String) map.get(lenA+","+lenB);
+
+
+
+        if(a.charAt(lenA)==b.charAt(lenB)) {
+          longest+=a.charAt(lenA);
+           longest+=lcs(a, b, lenA - 1, lenB - 1,map);
+
+
+        }
+        else {
+            String res1 =lcs(a, b, lenA - 1, lenB,map);
+            String res2=lcs(a, b, lenA, lenB - 1,map);
+    ;
+            if(res1.length()>res2.length())
+                longest+=res1;
+            else
+                longest+=res2;
+
+            }
+        map.put(lenA+","+lenB,longest);
+        return longest;
+    }
+
+
+    public static void main (String[] args) throws IOException {
+        //code
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int testCases=Integer.parseInt(br.readLine());
+        while (testCases  >0) {
+            --testCases;
+            String[] len=br.readLine().trim().split("\\s+");
+            int lenA=Integer.parseInt(len[0]);
+            int lenB=Integer.parseInt(len[1]);
+            String inputA = br.readLine().trim();
+            String inputB = br.readLine().trim();
+             HashMap map=new HashMap();
+            System.out.println(lcs(inputA,inputB,lenA-1,lenB-1,map).length());
+
+
+
+        }
+    }
+}
