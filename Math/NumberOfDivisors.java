@@ -72,16 +72,13 @@ public class NumberOfDivisors
             long n = s.nextLong();
 
 
-            long count=0;
-
+           long numberOfDivisors=1;
             while (n%2==0)
             {
-
-                ++count;
+         
+                ++numberOfDivisors;
                 n /= 2;
             }
-
-            long numberOfDivisors=count>0?count+1:1;
 
             for (int i = 3; i <= Math.sqrt(n); i+= 2)
             {
