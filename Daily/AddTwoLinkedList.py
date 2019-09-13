@@ -4,54 +4,57 @@ class ListNode(object):
     self.next = None
 
 class Solution:
-  def addTwoNumbers(self, l1, l2, c = 0):
+  def addTwoNumbers(self, head_a, head_b, c = 0):
     # Fill this in.
     try:
         reminder=0
         currentVal=0
 
-        if(l1 and l2):
-            currentVal=l1.val+l2.val
+        if(head_a and head_b):
+            currentVal=head_a.val+head_b.val
             reminder=currentVal//10
             currentVal=currentVal%10
 
         result=ListNode(currentVal)
-        l1=l1.next
-        l2=l2.next
+        head_a=head_a.next
+        head_b=head_b.next
         temp=result
-        while l1 and l2:
-            currentVal=l1.val+l2.val+reminder
+        while head_a and head_b:
+            currentVal=head_a.val+head_b.val+reminder
             reminder=currentVal//10
             currentVal=currentVal%10
             temp.next=ListNode(currentVal)
             temp=temp.next
-            l1=l1.next
-            l2=l2.next
+            head_a=head_a.next
+            head_b=head_b.next
 
-        while l1:
-            currentVal=l1.val+reminder
-            reminder=currentVal/10
+        while head_a:
+            currentVal=head_a.val+reminder
+            reminder=currentVal//10
             currentVal=currentVal%10
             temp.next=ListNode(currentVal)
             temp=temp.next
-            l1=l1.next
+            head_a=head_a.next
 
-        while l2:
-            currentVal=l2.val+reminder
-            reminder=currentVal/10
+        while head_b:
+            currentVal=head_b.val+reminder
+            reminder=currentVal//10
             currentVal=currentVal%10
             temp.next=ListNode(currentVal)
             temp=temp.next
-            l2=l2.next
+            head_b=head_b.next
         
         
 
-
+        if(reminder>0):
+            temp.next=ListNode(reminder)
+            temp=temp.next
 
         return result  
 
     except TypeError:
         return ListNode(0)
+
 
         
 

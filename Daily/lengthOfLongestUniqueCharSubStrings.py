@@ -14,7 +14,10 @@ class Solution:
         else:
             str+=i    
 
-
+    str_len=len(str)
+    if(max_count<str_len):
+                max_count=str_len
+    
     return max_count
 
 print (Solution().lengthOfLongestSubstring('abrkaabcdefghijjxxx'))
