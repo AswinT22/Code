@@ -62,16 +62,17 @@ class Solution:
 
       
      
-
+# A palindrome is a sequence of characters that reads the same backwards and forwards. 
+# Given a string, s, find the longest palindromic substring in s.
         
 # # Test program
-# s = "tracecars"
-# #Solution().longestPalindrome(s)
+s = "tracecars"
+print(str(Solution().longestPalindrome(s)))
 
 
-testcases=input()
-while(testcases > 0):
-    testcases-=1
-    s=input()
+# testcases=input()
+# while(testcases > 0):
+#     testcases-=1
+#     s=input()
 
-    print(str(Solution().longestPalindrome(s)))
+#     print(str(Solution().longestPalindrome(s)))
