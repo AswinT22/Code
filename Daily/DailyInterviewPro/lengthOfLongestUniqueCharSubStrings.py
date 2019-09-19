@@ -24,3 +24,11 @@ class Solution:
 # Given a string, find the length of the longest substring without repeating characters.
 
 print (Solution().lengthOfLongestSubstring('abrkaabcdefghijjxxx'))
+
+
+# https://practice.geeksforgeeks.org/problems/length-of-the-longest-substring/0
+# testcases=int(input())
+# while(testcases > 0):
+#     testcases-=1
+#     s=input()
+#     print(str(Solution().lengthOfLongestSubstring(s)))

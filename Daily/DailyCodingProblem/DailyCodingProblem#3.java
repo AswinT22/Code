@@ -1,5 +1,11 @@
 package Daily;
 
+
+// Given the root to a binary tree, implement serialize(root), 
+// which serializes the tree into a string, and deserialize(s), 
+// which deserializes the string back into the tree.
+
+
 //https://practice.geeksforgeeks.org/problems/serialize-and-deserialize-a-binary-tree/1
 import java.util.*;
 class Tree{
