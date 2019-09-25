@@ -24,8 +24,6 @@ def numberOfWays(string,n):
             arr[i]+=arr[i-2]
     
     return arr[n]
-    
-            
 
 for _ in range(int(input())):
         n=int(input())

@@ -1,4 +1,4 @@
-package Daily;
+package Daily.DailyCodingProblem;
 
 
 import java.util.function.BiFunction;

@@ -1,8 +1,8 @@
-def two_sum(list, k):
+def two_sum(lis, k):
 
         table=set()
 
-        for num in array:
+        for num in lis:
 
             if((k-num)in table):
                 return True
