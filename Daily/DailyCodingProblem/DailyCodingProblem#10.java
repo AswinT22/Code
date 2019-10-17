@@ -1,4 +1,4 @@
 package Daily.DailyCodingProblem;
 
-public class DailyCodingProblem10 {
-}
+//DailyCodingProblempublic git class DailyCodingProblem10 {
+//}
