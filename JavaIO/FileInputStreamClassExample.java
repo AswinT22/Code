@@ -11,7 +11,7 @@ import java.io.FileInputStream;
 public class FileInputStreamClassExample {
 
 
-    public static void main(String args[]){
+    public static void main(String[] args){
         try{
             FileInputStream fin=new FileInputStream("D:\\testout.txt");
             int i=fin.read();

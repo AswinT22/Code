@@ -14,7 +14,7 @@ import java.io.FileWriter;
 
 public class FileWriterClassExample {
 
-    public static void main(String args[]){
+    public static void main(String[] args){
         try{
             FileWriter fw=new FileWriter("D:\\testout.txt");
             fw.write("Welcome to FileWriter.");

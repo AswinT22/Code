@@ -16,7 +16,7 @@ import java.io.*;
 public class ByteArrayOutputStreamClassExample {
 
 
-    public static void main(String args[])throws Exception{
+    public static void main(String[] args)throws Exception{
         FileOutputStream fout1=new FileOutputStream("D:\\f1.txt");
         FileOutputStream fout2=new FileOutputStream("D:\\f2.txt");
 

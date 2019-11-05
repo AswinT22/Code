@@ -17,7 +17,7 @@ import java.io.FileWriter;
 public class CharArrayWriterClassExample {
 
 
-    public static void main(String args[])throws Exception{
+    public static void main(String[] args)throws Exception{
         CharArrayWriter out=new CharArrayWriter();
         out.write("Welcome to CharArrayWriter");
         FileWriter f1=new FileWriter("D:\\a.txt");

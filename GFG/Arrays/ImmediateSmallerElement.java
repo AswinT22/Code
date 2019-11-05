@@ -67,7 +67,7 @@ public class ImmediateSmallerElement {
             int n=sc.nextInt();
 
             int previousEle=sc.nextInt();
-            StringBuilder st=new StringBuilder("");
+            StringBuilder st=new StringBuilder();
             while (n-- >1){
 
                 int currentElement=sc.nextInt();

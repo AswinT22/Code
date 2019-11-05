@@ -1,5 +1,4 @@
 
-import java.util.ArrayDeque;
 import java.util.Scanner;
 import java.util.Stack;
 class SpeStack{

@@ -14,7 +14,7 @@ public class KnapsackWithReptation {
 
         // dp[i] is going to store maximum value
         // with knapsack capacity i.
-        int dp[] = new int[W + 1];
+        int[] dp = new int[W + 1];
 
         // Fill dp[] using above recursive formula
         for(int i = 0; i <= W; i++){
@@ -59,8 +59,8 @@ public class KnapsackWithReptation {
 
     public static void main(String[] args) {
         int W = 100;
-        int val[] = {10, 30, 20};
-        int wt[] = {5, 10, 15};
+        int[] val = {10, 30, 20};
+        int[] wt = {5, 10, 15};
         int n = val.length;
         System.out.println(knapSackWithReptation(W, n, val, wt));
         //gfg implementation00..................

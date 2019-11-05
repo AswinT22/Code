@@ -13,11 +13,11 @@ import java.io.*;
 
 public class BufferedOutputStreamClassExample {
 
-    public static void main(String args[])throws Exception{
+    public static void main(String[] args)throws Exception{
         FileOutputStream fout=new FileOutputStream("D:\\testout.txt");
         BufferedOutputStream bout=new BufferedOutputStream(fout);
         String s="Welcome to OutputStream.";
-        byte b[]=s.getBytes();
+        byte[] b = s.getBytes();
         bout.write(b);
         bout.flush();
         bout.close();

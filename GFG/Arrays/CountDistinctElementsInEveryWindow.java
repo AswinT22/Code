@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class CountDistinctElementsInEveryWindow
 {
-    public static void main(String args[])
+    public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
@@ -14,7 +14,7 @@ public class CountDistinctElementsInEveryWindow
         {
             int n = sc.nextInt();
             int k = sc.nextInt();
-            int a[] = new int[n];
+            int[] a = new int[n];
             for(int i=0; i<n; i++)
                 a[i] = sc.nextInt();
             //int k = sc.nextInt();
@@ -31,7 +31,7 @@ public class CountDistinctElementsInEveryWindow
 /*This is a function problem.You only need to complete the function given below*/
 /*You are required to complete below method */
 
-    static void countDistinct(int A[], int k, int n)
+    static void countDistinct(int[] A, int k, int n)
     {
         // Your code here
 

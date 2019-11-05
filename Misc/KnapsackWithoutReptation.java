@@ -69,8 +69,8 @@ public class KnapsackWithoutReptation {
 
     public static void main(String[] args) {
         int W =6;
-        int val[] = {30,14,16,9};
-        int wt[] = {6,3,4,2};
+        int[] val = {30, 14, 16, 9};
+        int[] wt = {6, 3, 4, 2};
         int n = val.length;
         System.out.println(W+": "+knapSackWithoutRepetation(W, n, val, wt));
 

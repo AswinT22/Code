@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.util.*;
 
 class MonkCandy {
-    public static void main(String args[] ) throws Exception {
+    public static void main(String[] args) throws Exception {
         FastReader s=new FastReader();
 
         int testCases=s.nextInt();

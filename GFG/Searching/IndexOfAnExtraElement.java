@@ -26,7 +26,7 @@ public class IndexOfAnExtraElement{
 /*This is a function problem.You only need to complete the function given below*/
 /*Complete the function below*/
 
-    public static int findExtra(int a[],int b[],int n)
+    public static int findExtra(int[] a, int[] b, int n)
     {
         // add code here.
 

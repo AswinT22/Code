@@ -75,7 +75,7 @@ public class RotatingAnArray {
 
             int d=sc.nextInt();
             int count=d;
-            StringBuilder st=new StringBuilder("");
+            StringBuilder st=new StringBuilder();
             do{
                 if(count>n-1)
                     count=0;

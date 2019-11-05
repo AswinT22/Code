@@ -15,7 +15,7 @@ import java.io.*;
 public class BufferedInputStreamClassExample {
 
 
-    public static void main(String args[]){
+    public static void main(String[] args){
         try{
             FileInputStream fin=new FileInputStream("D:\\testout.txt");
             BufferedInputStream bin=new BufferedInputStream(fin);

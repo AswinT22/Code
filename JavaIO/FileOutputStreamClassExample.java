@@ -12,7 +12,7 @@ package JavaIO;
 
 import java.io.FileOutputStream;
 public class FileOutputStreamClassExample {
-    public static void main(String args[]){
+    public static void main(String[] args){
         try{
             FileOutputStream fout=new FileOutputStream("D:\\testout.txt");
             fout.write(65);

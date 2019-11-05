@@ -66,7 +66,7 @@ public class LongestPalindromicSubsequence {
     }
 
 
-    public int calculateRecursive(char str[],int start,int len){
+    public int calculateRecursive(char[] str, int start, int len){
         if(len == 1){
             return 1;
         }

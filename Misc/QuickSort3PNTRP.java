@@ -45,7 +45,7 @@ public class QuickSort3PNTRP {
 
     }
 
-    private static int[] partition(int a[],int left,int right){
+    private static int[] partition(int[] a, int left, int right){
 
 
         int X=a[left],posPiv=left,j=left;

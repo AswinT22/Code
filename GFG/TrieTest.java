@@ -2,6 +2,7 @@ package GFG;
 
 import java.util.*;
 
+//https://practice.geeksforgeeks.org/problems/trie-delete/1
 class TrieNode
 {
     char content;
@@ -44,7 +45,7 @@ public class TrieTest
                 insert(keys.get(i));
             }
             String abc=sc.next();
-            g.deleteKey(root,abc);
+            GfG.deleteKey(root,abc);
             if(ifExsist(abc)==false)
                 System.out.print("1");
             else
@@ -62,9 +63,7 @@ public class TrieTest
             else
                 current = current.subNode(ch);
         }
-        if (current.isEnd == true)
-            return true;
-        return false;
+        return current.isEnd == true;
     }
     public static void insert(String word)
     {
@@ -143,6 +142,7 @@ class GfG
             if(isDeleted){
 
                 --root.count;
+
                 if(!root.isEnd && root.count==0  )
                 {
                     root=null;

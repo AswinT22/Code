@@ -12,7 +12,7 @@ import java.io.PrintStream;
 public class PrintStreamClassExample {
 
 
-    public static void main(String args[])throws Exception{
+    public static void main(String[] args)throws Exception{
         FileOutputStream fout=new FileOutputStream("D:\\testout.txt ");
         PrintStream pout=new PrintStream(fout);
         pout.println(2016);

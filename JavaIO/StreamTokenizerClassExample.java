@@ -125,7 +125,7 @@ import java.io.*;
 
 public class StreamTokenizerClassExample {
     public static void main(String[] args) throws InterruptedException,
-            FileNotFoundException, IOException
+            IOException
     {
         FileReader reader = new FileReader("ABC.txt");
         BufferedReader bufferread = new BufferedReader(reader);

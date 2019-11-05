@@ -59,7 +59,7 @@ import java.util.Vector;
 
 public class SequenceInputStreamClassExample {
 
-    public static void main(String args[])throws IOException{
+    public static void main(String[] args)throws IOException{
 //creating the FileInputStream objects for all the files
         FileInputStream fin=new FileInputStream("D:\\a.txt");
         FileInputStream fin2=new FileInputStream("D:\\b.txt");

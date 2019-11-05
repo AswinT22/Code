@@ -51,14 +51,14 @@ public class NumberOfOccurrence{
 
 
     }
-    public static void main(String args[])
+    public static void main(String[] args)
     {
       FastReader sc = new FastReader();
         long T = sc.nextLong();
         while(T>0)
         {
             int n = sc.nextInt();
-            long arr[] = new long[n];
+            long[] arr = new long[n];
             long key =sc.nextLong();
             for(int i=0;i<n;i++)
             {
@@ -73,7 +73,7 @@ public class NumberOfOccurrence{
     }
 
 
-    static String bin_search(long A[], int left, int right,  long k)
+    static String bin_search(long[] A, int left, int right, long k)
     {
         // Your code here
 

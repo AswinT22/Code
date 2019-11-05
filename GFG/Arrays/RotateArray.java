@@ -84,7 +84,7 @@ public class RotateArray{
                 int d = D % n;
 
                 int count = d;
-                StringBuilder st = new StringBuilder("");
+                StringBuilder st = new StringBuilder();
                 do {
                     if (count > n - 1)
                         count = 0;
